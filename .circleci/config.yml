@@ -17,7 +17,7 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - azure-cli/install
-      - azure-cli/login-with-service-principal
+      - azure-cli/azure-cli/login-with-user-or-service-principal
       - checkout
       - run:
           name: "Say hello"
